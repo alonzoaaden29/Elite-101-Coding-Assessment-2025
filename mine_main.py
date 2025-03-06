@@ -1,6 +1,6 @@
 # READ ME! This is the copy i am turning in!
 
-from example_main import find_all_tables_for_size, find_one_table_for_size, find_tables_including_combos, friendly_output
+
 
 
 def get_free_table_ids(tables):
@@ -34,15 +34,17 @@ if __name__ == "__main__":
 
     print("LEVEL 1: Free Tables =", get_free_table_ids(tables_data))
 
-    print("LEVEL 2: One table for party size 2 =", find_one_table_for_size(tables_data, 2))
+    print("LEVEL 2: One table for party size 2 =", find_table(tables_data, 2))
 
-    print("LEVEL 3: All tables for party size 2 =", find_all_tables_for_size(tables_data, 2))
-
-
+    print("LEVEL 3: All tables for party size 2 =", all_tables(tables_data, 2))
 
 
 
 
+
+# references:
+# https://stackoverflow.com/questions/509211/how-slicing-in-python-works
+# https://www.w3schools.com/python/python_dictionaries.asp
 
 
 
